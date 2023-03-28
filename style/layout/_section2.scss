@@ -1,0 +1,49 @@
+.section2{
+    background-color: $color1;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .left,
+    .right{
+        padding: 40px 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: solid 1px $color3;
+    }
+
+    .left{
+        border-right: solid 1px $color3;
+    }
+
+    h3{
+        font-family: $font2;
+        font-weight: 200;
+        text-align: center;
+        margin: 25px 0;
+    }
+
+    h2{
+        font-family: $font1;
+        text-transform: uppercase;
+        width: 60%;
+        margin: 0 auto 25px;
+    }
+
+    img{
+        margin-bottom:40px ;
+    }
+
+    p{
+        font-family: $font2;
+        line-height: 40px;
+        font-weight: 200;
+        margin-bottom: 30px;
+    }
+
+    button{
+        display: block;
+        margin: 0 auto 30px;
+    }
+
+}

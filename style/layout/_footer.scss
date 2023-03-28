@@ -1,0 +1,116 @@
+footer{
+    margin: 40px 0;
+    background-color: rgb(242, 241, 241);
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .leftpart,
+    .rightpart{
+        padding: 40px 60px;
+    }
+
+    .rightpart{
+        border-left: solid 1px rgb(175, 175, 175);
+        overflow: hidden;
+    }
+
+    .leftpartcontainer{
+        div{
+            display: flex;
+            flex-direction: column;
+            margin: 25px 0;
+        }
+
+        input{
+            background-color: rgb(242, 241, 241) ;
+            border: solid 1px $color3;
+            border-radius: 5px;
+            height: 30px;
+        }
+
+        label{
+            margin-bottom: 15px;
+        }
+
+        textarea{
+            resize: none;
+            height: 200px;
+            border-radius: 5px;
+            border: solid 1px $color3;
+            background-color: rgb(242, 241, 241) ;
+        }
+
+        button{
+            background-color: rgb(242, 241, 241);
+            border: solid 2px gray;
+            color: gray;
+            transition: 0.2s;
+
+            &:hover{
+                background-color: $color3;
+            }
+        }
+
+    }
+
+    .rightpartcontainer{
+        height: 100%;
+        display: grid;
+        grid-template-rows: 25% 25% 25% 25%;
+        
+
+        .rows{
+            align-items: center;
+            display: grid;
+            grid-template-columns: 25% 75%;
+            position: relative;
+
+            p{
+                color: rgb(175, 175, 175);
+                width: 60%;
+            }
+
+            .icon{
+                display: flex;
+                justify-content: start;
+                
+
+                button{
+                    margin-right: 40px;
+                    padding: 20px;
+                    height: 25px;
+                    width: 25px;
+                    border-radius: 50px;
+                    border: solid 1px rgb(175, 175, 175);
+                    background-color: rgb(242, 241, 241);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            &:after{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                height: 1px;
+                width: 125%;
+                transform: translateX(-60px);
+                background-color:rgb(175, 175, 175);
+            }
+        }
+
+        div:last-child::after{
+            background-color:rgb(242, 241, 241) ;
+        }
+    }
+
+    label{
+        font-family: $font1;
+        text-transform:uppercase ;
+        color: gray;
+    }
+
+    
+}
+

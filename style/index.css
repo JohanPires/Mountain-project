@@ -1,0 +1,303 @@
+@font-face {
+  font-family: "font1";
+  src: url(../font/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+  font-family: "font2";
+  src: url(../font/Merriweather-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../images/bg.jpg) center/cover fixed;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+button {
+  border: 1px solid black;
+  padding: 10px 30px;
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+  font-family: "font1", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 800;
+  transition: 0.2s;
+}
+button:hover {
+  background-color: rgb(222, 220, 220);
+  color: white;
+  border: solid 1px rgb(222, 220, 220);
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+header .headercontainer {
+  text-align: center;
+}
+header .headercontainer h1 {
+  text-transform: uppercase;
+  color: white;
+  font-family: "font1", sans-serif;
+  font-size: 6rem;
+  transform: translateY(-100px);
+  width: 80%;
+  margin: 0 auto;
+}
+header .headercontainer p {
+  color: white;
+  font-family: "font2", sans-serif;
+  transform: translateY(-70px);
+}
+header .headercontainer .headericon {
+  border: solid 1px white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+header .headercontainer .headericon:hover {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+header .headercontainer .headericon:hover i {
+  transform: scale(1.1);
+}
+header .headercontainer .headericon i {
+  color: white;
+}
+header nav {
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(255, 255, 255, 0.145);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+header nav .leftnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav li {
+  color: white;
+  font-family: "font1", sans-serif;
+  text-transform: uppercase;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  cursor: pointer;
+}
+header nav li:hover {
+  color: black;
+  background-color: rgb(222, 220, 220);
+}
+header nav .rightnav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header nav i {
+  color: white;
+  margin: 0 25px;
+}
+
+.section1 {
+  background-color: white;
+  text-align: center;
+}
+.section1 h3 {
+  padding-top: 30px;
+  font-family: "font2", sans-serif;
+  font-weight: 200;
+}
+.section1 h1 {
+  text-transform: uppercase;
+  margin: 50px auto 40px;
+  font-size: 3rem;
+  width: 70%;
+  font-family: "font1", sans-serif;
+}
+.section1 p {
+  font-family: "font2", sans-serif;
+  line-height: 40px;
+  font-weight: 200;
+  width: 50%;
+  margin: 0 auto 40px;
+}
+.section1 img {
+  display: block;
+  width: 80%;
+  margin: 0 auto 50px;
+}
+.section1 button {
+  margin-bottom: 60px;
+}
+
+.section2 {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.section2 .left,
+.section2 .right {
+  padding: 40px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: solid 1px rgb(222, 220, 220);
+}
+.section2 .left {
+  border-right: solid 1px rgb(222, 220, 220);
+}
+.section2 h3 {
+  font-family: "font2", sans-serif;
+  font-weight: 200;
+  text-align: center;
+  margin: 25px 0;
+}
+.section2 h2 {
+  font-family: "font1", sans-serif;
+  text-transform: uppercase;
+  width: 60%;
+  margin: 0 auto 25px;
+}
+.section2 img {
+  margin-bottom: 40px;
+}
+.section2 p {
+  font-family: "font2", sans-serif;
+  line-height: 40px;
+  font-weight: 200;
+  margin-bottom: 30px;
+}
+.section2 button {
+  display: block;
+  margin: 0 auto 30px;
+}
+
+footer {
+  margin: 40px 0;
+  background-color: rgb(242, 241, 241);
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+footer .leftpart,
+footer .rightpart {
+  padding: 40px 60px;
+}
+footer .rightpart {
+  border-left: solid 1px rgb(175, 175, 175);
+  overflow: hidden;
+}
+footer .leftpartcontainer div {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0;
+}
+footer .leftpartcontainer input {
+  background-color: rgb(242, 241, 241);
+  border: solid 1px rgb(222, 220, 220);
+  border-radius: 5px;
+  height: 30px;
+}
+footer .leftpartcontainer label {
+  margin-bottom: 15px;
+}
+footer .leftpartcontainer textarea {
+  resize: none;
+  height: 200px;
+  border-radius: 5px;
+  border: solid 1px rgb(222, 220, 220);
+  background-color: rgb(242, 241, 241);
+}
+footer .leftpartcontainer button {
+  background-color: rgb(242, 241, 241);
+  border: solid 2px gray;
+  color: gray;
+  transition: 0.2s;
+}
+footer .leftpartcontainer button:hover {
+  background-color: rgb(222, 220, 220);
+}
+footer .rightpartcontainer {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+footer .rightpartcontainer .rows {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  position: relative;
+}
+footer .rightpartcontainer .rows p {
+  color: rgb(175, 175, 175);
+  width: 60%;
+}
+footer .rightpartcontainer .rows .icon {
+  display: flex;
+  justify-content: start;
+}
+footer .rightpartcontainer .rows .icon button {
+  margin-right: 40px;
+  padding: 20px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50px;
+  border: solid 1px rgb(175, 175, 175);
+  background-color: rgb(242, 241, 241);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .rightpartcontainer .rows:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  width: 125%;
+  transform: translateX(-60px);
+  background-color: rgb(175, 175, 175);
+}
+footer .rightpartcontainer div:last-child::after {
+  background-color: rgb(242, 241, 241);
+}
+footer label {
+  font-family: "font1", sans-serif;
+  text-transform: uppercase;
+  color: gray;
+}/*# sourceMappingURL=index.css.map */
